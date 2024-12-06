@@ -1,0 +1,36 @@
+{
+    "manifest_version": 3,
+    "name": "Cookie Cleaner & Refresher",
+    "version": "1.0",
+    "description": "Clears cookies for specific websites every 5 minutes and refreshes them",
+    "permissions": [
+      "cookies",
+      "tabs",
+      "storage",
+      "scripting"
+    ],
+    "host_permissions": [
+      "<all_urls>"
+    ],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "icon/icon16.png",
+        "48": "icon/icon48.png",
+        "128": "icon/icon128.png"
+      }
+    },
+    "icons": {
+      "16": "icon/icon16.png",
+      "48": "icon/icon48.png",
+      "128": "icon/icon128.png"
+    },
+    "browser_specific_settings": {
+      "edge": {
+        "browser_action_next_to_address_bar": true
+      }
+    }
+  }
